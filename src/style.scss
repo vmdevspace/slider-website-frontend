@@ -1,0 +1,18 @@
+@import './scss/settings/variables';
+@import './scss/settings/breakpoints';
+@import './scss/settings/reset';
+
+@import './scss/fonts/fonts';
+@import './scss/fonts/icons';
+
+// layout
+@import './scss/layout/layout';
+
+// header
+@import './scss/layout/header/header';
+
+// content
+@import './scss/layout/content/content';
+
+// footer
+@import './scss/layout/footer/footer';

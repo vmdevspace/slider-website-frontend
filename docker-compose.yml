@@ -1,0 +1,12 @@
+services:
+  nodejs:
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: slider-website-frontend
+    volumes:
+     - .:/app
+    ports:
+     - '7777:7777'
