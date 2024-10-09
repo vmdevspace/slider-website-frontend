@@ -1,0 +1,17 @@
+.mobile-menu-btn{
+    cursor: pointer;
+
+    >.container{
+        width: 30px;
+        height: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .line{
+            height: 2px;
+            background-color: #ffffff;
+        }
+    }
+}

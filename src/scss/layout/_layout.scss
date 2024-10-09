@@ -5,6 +5,7 @@ body {}
 .body {
     background-color: $body-bg;
     min-height: 100vh;
+    font-family: 'Sen-Regular';
 }
 
 .website {
@@ -19,10 +20,10 @@ body {}
 
     display: grid;
 
-    // header: auto
+    // header: auto | fixed
     // content: 1fr
     // footer auto
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr auto;
 }
 
 .g {
@@ -47,12 +48,12 @@ body {}
         }
 
         @include media-breakpoint-only(sm) {
-            max-width: auto;
+            // max-width: auto;
             padding: 0 15px;
         }
 
         @include media-breakpoint-only(xs) {
-            max-width: auto;
+            // max-width: auto;
             padding: 0 15px;
         }
     }
