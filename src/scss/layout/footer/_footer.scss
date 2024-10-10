@@ -1,1 +1,235 @@
-.footer {}
+.footer {
+    background-color: #232536;
+}
+
+.footer-grid{
+    display: grid;
+
+    grid-template-areas: 
+    "logo footer-main-menu"
+    "subscribe subscribe"
+    "copyright social";
+
+    grid-template-rows: 70px auto 70px;
+    grid-template-columns: auto 1fr;
+
+    // @include media-breakpoint-only(xxl) {}
+
+    // @include media-breakpoint-only(xl) {}
+
+    // @include media-breakpoint-only(lg) {}
+
+    // @include media-breakpoint-only(md) {}
+
+    // @include media-breakpoint-only(sm) {}
+
+    // @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg){
+        grid-template-areas: 
+        "logo"
+        "footer-main-menu"
+        "subscribe"
+        "social"
+        "copyright";
+    
+        grid-template-rows: 70px auto auto auto 70px;
+        grid-template-columns: auto;
+    }
+
+    .c1{
+        grid-area: logo;
+        align-self: center;
+    }
+
+    .c2{
+        grid-area: footer-main-menu;
+
+        justify-self: end;
+        align-self: center;
+
+        // @include media-breakpoint-only(xxl) {}
+
+        // @include media-breakpoint-only(xl) {}
+
+        // @include media-breakpoint-only(lg) {}
+
+        // @include media-breakpoint-only(md) {}
+
+        // @include media-breakpoint-only(sm) {}
+
+        // @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg){
+            justify-self: auto;
+            align-self: auto;
+        }
+    }
+
+    .c3{
+        grid-area: subscribe;
+    }
+
+    .c4{
+        grid-area: copyright;
+
+        align-self: center;
+
+        // @include media-breakpoint-only(xxl) {}
+
+        // @include media-breakpoint-only(xl) {}
+
+        // @include media-breakpoint-only(lg) {}
+
+        // @include media-breakpoint-only(md) {}
+
+        // @include media-breakpoint-only(sm) {}
+
+        // @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg){
+            justify-self: center;
+            // align-self: center;
+        }
+    }
+
+    .c5{
+        grid-area: social;
+
+        justify-self: end;
+        align-self: center;
+
+        // @include media-breakpoint-only(xxl) {}
+
+        // @include media-breakpoint-only(xl) {}
+
+        // @include media-breakpoint-only(lg) {}
+
+        // @include media-breakpoint-only(md) {}
+
+        // @include media-breakpoint-only(sm) {}
+
+        // @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg){
+            justify-self: auto;
+        }
+    }
+}
+
+.footer-logo{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Sen-Bold";
+}
+
+.footer-copyright{
+    font-size: 14px;
+    color: #6d6e76;
+}
+
+.footer-nav{}
+
+.footer-menu{
+    display: flex;
+    flex-direction: row;
+
+    // @include media-breakpoint-only(xxl) {}
+
+    // @include media-breakpoint-only(xl) {}
+
+    // @include media-breakpoint-only(lg) {}
+
+    // @include media-breakpoint-only(md) {}
+
+    // @include media-breakpoint-only(sm) {}
+
+    // @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg){
+        display: block;
+    }
+
+    .item{
+        margin: 0 5px 0 5px;
+
+        &:first-child{
+            margin: 0 5px 0 0;
+        }
+
+        &:last-child{
+            margin: 0 0 0 5px;
+        }
+
+        &:only-child{
+            margin: 0 0 0 0;
+        }
+
+        // @include media-breakpoint-only(xxl) {}
+
+        // @include media-breakpoint-only(xl) {}
+
+        // @include media-breakpoint-only(lg) {}
+
+        // @include media-breakpoint-only(md) {}
+
+        // @include media-breakpoint-only(sm) {}
+
+        // @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg){
+            margin: 10px 0 10px 0;
+
+            &:first-child{
+                margin: 0 0 10px 0;
+            }
+    
+            &:last-child{
+                margin: 10px 0 0 0;
+            }
+    
+            &:only-child{
+                margin: 0 0 0 0;
+            }
+        }
+
+        .link{
+            color: #ffffff;
+
+            &:hover{
+                color: #ffd050;
+            }
+        }
+    }
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: row;
+
+    .item{
+        margin: 0 5px 0 5px;
+
+        &:first-child{
+            margin: 0 5px 0 0;
+        }
+
+        &:last-child{
+            margin: 0 0 0 5px;
+        }
+
+        &:only-child{
+            margin: 0 0 0 0;
+        }
+
+        .link{
+            color: #6d6e76;
+            font-size: 18px;
+
+            &:hover{
+                color: #ffd050;
+            }
+        }
+    }
+}
