@@ -2,4 +2,5 @@
 // import './style.scss';
 
 // js
-import './js/test';
+import './js/subscribe';
+import './js/mobile-menu';
