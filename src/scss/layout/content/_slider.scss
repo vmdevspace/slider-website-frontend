@@ -1,8 +1,8 @@
-.img-slider{
+.img-slider {
     position: relative;
 }
 
-.img-slider--sections{
+.img-slider--sections {
     position: absolute;
     top: 0;
     right: 0;
@@ -14,30 +14,30 @@
     grid-template-columns: auto 1fr auto;
     grid-template-rows: auto 1fr auto;
 
-    grid-template-areas: 
-    "top top top"
-    "left center right"
-    "bottom bottom bottom";
+    grid-template-areas:
+        "top top top"
+        "left center right"
+        "bottom bottom bottom";
 
-    .top{
+    .top {
         grid-area: top;
     }
 
-    .left{
+    .left {
         grid-area: left;
         align-self: center;
     }
 
-    .center{
+    .center {
         grid-area: center;
     }
 
-    .right{
+    .right {
         grid-area: right;
         align-self: center;
     }
 
-    .bottom{
+    .bottom {
         grid-area: bottom;
         justify-self: center;
     }
@@ -65,18 +65,18 @@
         opacity: 1;
     }
 
-    .na{
+    .na {
         transition: none;
     }
 }
 
-.img-slider--miniatures{
+.img-slider--miniatures {
     padding: 10px 0;
 
     display: flex;
     flex-direction: row;
 
-    .miniature{
+    .miniature {
         width: 15px;
         height: 15px;
 
@@ -87,37 +87,105 @@
 
         margin: 0 5px 0 5px;
 
-        &:first-child{
+        // @include media-breakpoint-only(xxl) {}
+
+        // @include media-breakpoint-only(xl) {}
+
+        // @include media-breakpoint-only(lg) {}
+
+        // @include media-breakpoint-only(md) {}
+
+        // @include media-breakpoint-only(sm) {}
+
+        // @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(md) {
+            width: 10px;
+            height: 10px;
+        }
+
+        &:first-child {
             margin: 0 5px 0 0;
         }
 
-        &:last-child{
+        &:last-child {
             margin: 0 0 0 5px;
         }
 
-        &:hover{
-            background-color: #b9b9b9;
+        &:hover {
+            background-color: #FFD050;
         }
     }
 
-    .active{
-        background-color: #b9b9b9;
+    .active {
+        background-color: #FFD050;
     }
 }
 
-.img-slider--nav-btn{
+.img-slider--nav-btn {
     padding: 0 15px;
 
-    button{
+    button {
         margin: 0;
         padding: 0;
         background: none;
-        border: 1px solid #FFFFFF;
+        border: 1px solid #FFD050;
         border-radius: 50%;
 
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         cursor: pointer;
+
+        // @include media-breakpoint-only(xxl) {}
+
+        // @include media-breakpoint-only(xl) {}
+
+        // @include media-breakpoint-only(lg) {}
+
+        // @include media-breakpoint-only(md) {}
+
+        // @include media-breakpoint-only(sm) {}
+
+        // @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(md) {
+            width: 25px;
+            height: 25px;
+        }
+
+        i {
+            color: #FFD050;
+            font-size: 18px;
+            line-height: 0;
+
+            // @include media-breakpoint-only(xxl) {}
+
+            // @include media-breakpoint-only(xl) {}
+
+            // @include media-breakpoint-only(lg) {}
+
+            // @include media-breakpoint-only(md) {}
+
+            // @include media-breakpoint-only(sm) {}
+
+            // @include media-breakpoint-only(xs) {}
+
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+            }
+        }
+
+        &:hover {
+            background-color: #FFD050;
+
+            i {
+                color: #000000;
+            }
+        }
     }
 }
