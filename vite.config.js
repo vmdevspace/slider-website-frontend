@@ -36,6 +36,10 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 home: resolve(root, 'index.html'),
+                about: resolve(root, 'about.html'),
+                docs: resolve(root, 'docs.html'),
+                blog: resolve(root, 'blog.html'),
+                contacts: resolve(root, 'contacts.html'),
             },
 
             output: {
