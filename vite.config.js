@@ -39,6 +39,7 @@ export default defineConfig({
                 about: resolve(root, 'about.html'),
                 docs: resolve(root, 'docs.html'),
                 blog: resolve(root, 'blog.html'),
+                post: resolve(root, 'post.html'),
                 contacts: resolve(root, 'contacts.html'),
             },
 
