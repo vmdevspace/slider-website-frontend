@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> head}}
+</head>
+
+<body class="body">
+  <div class="website">
+    {{> header }}
+
+    <div class="content">
+        <div class="text g">
+            <div class="container">
+                <article class="article"></article>
+            </div>
+        </div>
+    </div>
+
+    {{> footer }}
+  </div>
+
+  {{> mobile-menu}}
+
+  <script type="module" src="{{resolve-from-root 'main.js'}}"></script>
+</body>
+
+</html>
