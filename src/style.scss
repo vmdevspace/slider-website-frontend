@@ -27,8 +27,9 @@
 
 @import './scss/layout/footer/preloader';
 
-// page blocs
+// page blocks
 @import './scss/layout/content/page-blocks/blog-index/all-blog-posts';
+@import './scss/layout/content/page-blocks/blog-category/blog-category';
 
 .d{
     display: block;
