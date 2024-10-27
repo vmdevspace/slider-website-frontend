@@ -1,0 +1,240 @@
+.home-blog{
+    margin: 55px 0 25px 0;
+}
+
+.home-blog-columns{
+    display: grid;
+    grid-template-columns: 1fr 450px;
+
+    // @include media-breakpoint-only(xxl) {}
+
+    // @include media-breakpoint-only(xl) {}
+
+    // @include media-breakpoint-only(lg) {}
+
+    // @include media-breakpoint-only(md) {}
+
+    // @include media-breakpoint-only(sm) {}
+
+    // @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg){
+        grid-template-columns: 1fr;
+    }
+
+    >.c1{
+        padding-right: 50px;
+
+        // @include media-breakpoint-only(xxl) {}
+
+        // @include media-breakpoint-only(xl) {}
+
+        // @include media-breakpoint-only(lg) {}
+
+        // @include media-breakpoint-only(md) {}
+
+        // @include media-breakpoint-only(sm) {}
+
+        // @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg){
+            padding-right: 0;
+        }
+    }
+
+    >.c2{
+        // @include media-breakpoint-only(xxl) {}
+
+        // @include media-breakpoint-only(xl) {}
+
+        // @include media-breakpoint-only(lg) {}
+
+        // @include media-breakpoint-only(md) {}
+
+        // @include media-breakpoint-only(sm) {}
+
+        // @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg){
+            padding-top: 35px;
+        }
+    }
+}
+
+.home-blog-title{
+    padding-bottom: 25px;
+
+    .title{
+        font-family: 'Sen-Bold';
+        font-size: 18px;
+    
+        color: #232536;
+    }
+}
+
+.home-blog-title--all{
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    >.title{}
+
+    >.link{
+        justify-self: end;
+    }
+}
+
+.home-blog-link{
+    font-family: 'Sen-Regular';
+    font-size: 14px;
+    color: #592EA9;
+
+    &:hover{
+        color: #FFD050;
+    }
+}
+
+.home-blog-link{}
+
+.home-blog-all{
+
+    >.item{
+
+        // &:hover{
+        //     background-color: #FBF6EA;
+        //     cursor: pointer;
+        // }
+
+        // @include media-breakpoint-only(xxl) {}
+
+        // @include media-breakpoint-only(xl) {}
+
+        // @include media-breakpoint-only(lg) {}
+
+        // @include media-breakpoint-only(md) {}
+
+        // @include media-breakpoint-only(sm) {}
+
+        // @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg){
+            margin: 10px 0 10px 0;
+
+            &:first-child{
+                margin: 0 0 10px 0;
+            }
+    
+            &:last-child{
+                margin: 10px 0 0 0;
+            }
+    
+            &:only-child{
+                margin: 0 0 0 0;
+            }
+    
+            border-left: 4px solid #FBF6EA;
+        }
+
+        >.link{
+
+            &:hover{
+
+                .home-blog-all--preview{
+                    background-color: #FBF6EA;
+                }
+            }
+        }
+    }
+}
+
+.home-blog-all--preview{
+    padding: 25px 150px 25px 15px;
+
+    // @include media-breakpoint-only(xxl) {}
+
+    // @include media-breakpoint-only(xl) {}
+
+    // @include media-breakpoint-only(lg) {}
+
+    // @include media-breakpoint-only(md) {}
+
+    // @include media-breakpoint-only(sm) {}
+
+    // @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg){
+        padding: 25px 15px 25px 15px;
+    }
+
+    >.r1{}
+
+    >.r2{}
+}
+
+.home-blog-post--title{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Sen-Bold';
+    font-size: 18px;
+
+    color: #232536;
+}
+
+.home-blog-featured{
+    padding: 25px;
+    border: 1px solid #F4F4F4;
+
+    >.img{
+
+        img{
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    >.title{
+        padding-top: 25px;
+
+        h2{
+            font-family: 'Sen-Bold';
+            font-size: 18px;
+        
+            color: #232536;
+        }
+    }
+
+    >.text{
+
+        p{
+            color: #6D6E76;
+            font-size: 14px;
+        }
+    }
+
+    >.more{}
+}
+
+.home-blog--more-link{
+    font-family: 'Sen-Bold';
+    font-size: 16px;
+
+    color: #232536;
+
+    >.button{
+        width: 200px;
+        height: 50px;
+
+        background-color: #FFD050;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:hover{
+        
+        >.button{    
+            background-color: #EDC14A;
+        }
+    }
+}
