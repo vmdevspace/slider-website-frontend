@@ -60,3 +60,38 @@ body {}
 
     >.container-fluid {}
 }
+
+.p {
+
+    >.container {
+        margin: 0 auto;
+
+        @include media-breakpoint-only(xxl) {
+            max-width: 850px;
+        }
+
+        @include media-breakpoint-only(xl) {
+            max-width: 750px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            max-width: 650px;
+        }
+
+        @include media-breakpoint-only(md) {
+            max-width: 550px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            // max-width: auto;
+            padding: 0 15px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            // max-width: auto;
+            padding: 0 15px;
+        }
+    }
+
+    >.container-fluid {}
+}
