@@ -5,7 +5,6 @@ class Elements {
         this.leftBtn = this.el(slider + ' .left-btn');
         this.rightBtn = this.el(slider + ' .right-btn');
         this.center = this.el(slider + ' .center');
-        console.log(slider);
     }
 
     el(element) {
@@ -30,7 +29,9 @@ export class Slider extends Elements {
     }
 
     start() {
-        this.setTimeoutId = setTimeout(() => this.run(), this.firstStartTimeout);
+        if(this.slides.length != 0){
+            this.setTimeoutId = setTimeout(() => this.run(), this.firstStartTimeout);
+        }
     }
 
     stop() {
