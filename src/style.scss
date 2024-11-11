@@ -2,6 +2,7 @@
 @import './scss/settings/breakpoints';
 @import './scss/settings/reset';
 
+// fonts and icon-fonts
 @import './scss/fonts/fonts';
 @import './scss/fonts/icons';
 
@@ -17,7 +18,6 @@
 // content
 @import './scss/layout/content/content';
 @import './scss/layout/content/slider';
-@import './scss/layout/content/text';
 
 // footer
 @import './scss/layout/footer/footer';
@@ -28,10 +28,16 @@
 @import './scss/layout/footer/preloader';
 
 // page blocks
-@import './scss/layout/content/page-blocks/blog-index/all-blog-posts';
-@import './scss/layout/content/page-blocks/blog-category/blog-category';
-@import './scss/layout/content/page-blocks/blog-post/blog-post';
-@import './scss/layout/content/page-blocks/homepage/blog';
+// blog
+@import './scss/layout/content/pages/blog/index/all-blog-posts';
+@import './scss/layout/content/pages/blog/category/blog-category';
+@import './scss/layout/content/pages/blog/post/blog-post';
+
+// homepage
+@import './scss/layout/content/pages/homepage/blog';
+
+// contacts
+@import './scss/layout/content/pages/contacts/contacts';
 
 .d{
     display: block;
