@@ -37,7 +37,9 @@
 @import './scss/layout/content/pages/homepage/blog';
 
 // contacts
-@import './scss/layout/content/pages/contacts/contacts';
+@import './scss/layout/content/pages/contacts/titles';
+@import './scss/layout/content/pages/contacts/list';
+@import './scss/layout/content/pages/contacts/form';
 
 .d{
     display: block;

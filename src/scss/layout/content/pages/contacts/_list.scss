@@ -1,0 +1,82 @@
+.contacts {
+    margin: 50px 0 25px;
+    background-color: #592EA9;
+
+    >.container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        padding: 25px 45px;
+
+        // @include media-breakpoint-only(xxl) {}
+
+        // @include media-breakpoint-only(xl) {}
+
+        // @include media-breakpoint-only(lg) {}
+
+        // @include media-breakpoint-only(md) {}
+
+        // @include media-breakpoint-only(sm) {}
+
+        // @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg) {
+            grid-template-columns: 1fr;
+            gap: 25px;
+
+            padding: 15px 20px;
+        }
+
+        >.c1 {}
+
+        >.c2 {}
+    }
+}
+
+.contacts-title {
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-bottom: 35px;
+
+    // @include media-breakpoint-only(xxl) {}
+
+    // @include media-breakpoint-only(xl) {}
+
+    // @include media-breakpoint-only(lg) {}
+
+    // @include media-breakpoint-only(md) {}
+
+    // @include media-breakpoint-only(sm) {}
+
+    // @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 10px;
+    }
+}
+
+.contacts-list {
+
+    li {
+        margin: 5px 0 5px 0;
+
+        &:first-child {
+            margin: 0 0 5px 0;
+            ;
+        }
+
+        &:last-child {
+            margin: 5px 0 0 0;
+            ;
+        }
+
+        &:only-child {
+            margin: 0 0 0 0;
+        }
+    }
+}
+
+.contacts-list--item {
+    font-size: 16px;
+    color: #FFFFFF;
+}
