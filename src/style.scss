@@ -9,6 +9,7 @@
 // layout
 @import './scss/layout/layout';
 @import './scss/layout/mobile-menu';
+@import './scss/layout/article';
 
 // header
 @import './scss/layout/header/header';
@@ -27,13 +28,19 @@
 @import './scss/layout/footer/subscribe/preloader';
 
 // page blocks
+// homepage
+@import './scss/layout/content/pages/homepage/blog';
+
+// about
+@import './scss/layout/content/pages/about/about';
+
+// docs
+@import './scss/layout/content/pages/docs/docs';
+
 // blog
 @import './scss/layout/content/pages/blog/index/all-blog-posts';
 @import './scss/layout/content/pages/blog/category/blog-category';
 @import './scss/layout/content/pages/blog/post/blog-post';
-
-// homepage
-@import './scss/layout/content/pages/homepage/blog';
 
 // contacts
 @import './scss/layout/content/pages/contacts/titles';
