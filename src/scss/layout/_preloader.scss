@@ -1,15 +1,18 @@
-.footer-subscribe-preloader {
-    display: none;
-    opacity: 0;
+.d{
 
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    .preloader{
+        display: block;
+    }
 }
 
-.footer-subscribe--preloader {
+.a{
+    
+    .preloader{
+        opacity: 1;
+    }
+}
+
+.form-preloader {
     background-color: #232536ee;
 
     position: absolute;

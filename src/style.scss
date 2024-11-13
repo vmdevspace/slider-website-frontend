@@ -25,7 +25,6 @@
 @import './scss/layout/footer/footer-nav';
 @import './scss/layout/footer/footer-social';
 @import './scss/layout/footer/subscribe/subscribe';
-@import './scss/layout/footer/subscribe/preloader';
 
 // page blocks
 // homepage
@@ -47,13 +46,8 @@
 @import './scss/layout/content/pages/contacts/list';
 @import './scss/layout/content/pages/contacts/form';
 
-.d{
-    display: block;
-}
-
-.a{
-    opacity: 1;
-}
+// preloader
+@import './scss/layout/preloader';
 
 .scroll-off {
     overflow: hidden;
