@@ -50,6 +50,7 @@
 }
 
 .contacts-form--field {
+    position: relative;
 
     .input {
         margin: 0;
@@ -95,5 +96,14 @@
         }
     }
 
-    .error {}
+    .error {
+        font-size: 11px;
+        color: #FF7777;
+
+        position: absolute;
+        top: 1px;
+        right: 5px;
+        bottom: auto;
+        left: auto;
+    }
 }
