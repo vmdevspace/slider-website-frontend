@@ -1,5 +1,5 @@
 const form = document.querySelector('.footer-subscribe-form');
-const footerSubscribe = document.querySelector('#fs');
+const formPreloaderOverlay = document.querySelector('#fs > .form-preloader-overlay');
 const preloaderModes = document.querySelectorAll('.preloader-modes .mode');
 
 if(form != null){
@@ -7,9 +7,9 @@ if(form != null){
     form.addEventListener('submit', function(e){
         e.preventDefault();
         
-        footerSubscribe.classList.add('d');
+        formPreloaderOverlay.classList.add('d');
         setTimeout(function(){
-            footerSubscribe.classList.add('a');
+            formPreloaderOverlay.classList.add('a');
 
             setTimeout(function(){
                 preloaderModes[0].classList.remove('on');

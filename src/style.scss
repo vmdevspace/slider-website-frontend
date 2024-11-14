@@ -49,6 +49,14 @@
 // preloader
 @import './scss/layout/preloader';
 
+.d{
+    display: block;
+}
+
+.a{
+    opacity: 1;
+}
+
 .scroll-off {
     overflow: hidden;
 }
